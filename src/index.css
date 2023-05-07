@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family:'Almarai', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+}
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App .py-5.container{
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rectangle{
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 1px 4px 4px 4px rgba(85, 85, 85, 0.25);
+  overflow: auto;
+}
+.img{
+  width:70px; 
+  height: 70px;
+  border-radius: 50%;
+}
+.massage{
+  width: 160%;
+  text-align: center;
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 574px) {
+  .massage{
+    font-size: 25px;
+    width: 250%;
+    text-align: center;
+  }
+  .d-flex.justify-content-between.col-sm-8{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+    .d-flex.justify-content-between.col-sm-8 button{
+      width: 100%;
+    }
+  
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  .justify-content-center.py-4.w-100.m-0.row .col-sm-8{
+    width: 100%;
+  }
+
+.massage {
+    width: 250%;
+    font-size: 30px;
+}
+ .d-flex.justify-content-between.col-sm-8{
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+  .justify-content-center.py-4.w-100.m-0.row .col-sm-8{
+    width: 100%;
+  }
+      .massage {
+    width: 200%;
+    font-size: 30px;
+}
+.d-flex.justify-content-between.col-sm-8{
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+}
